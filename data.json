@@ -1,0 +1,258 @@
+{
+  "last_commit": {
+    "__type__": "datetime",
+    "value": "2022-01-31T22:03:06.725496"
+  },
+  "project": {
+    "0": {
+      "__type__": "Project",
+      "value": {
+        "name": "stubgen",
+        "created": {
+          "__type__": "datetime",
+          "value": "2022-01-31T22:03:06.598540"
+        },
+        "documentation": null,
+        "total_size": 1202938
+      }
+    }
+  },
+  "release": {
+    "0": {
+      "__type__": "Release",
+      "value": {
+        "project_id": 0,
+        "version": "1.1.1",
+        "created": {
+          "__type__": "datetime",
+          "value": "2022-01-31T22:03:06.598628"
+        },
+        "author": "Ryan Smith",
+        "author_email": "Ryan.Smith1215@gmail.com",
+        "maintainer": null,
+        "maintainer_email": null,
+        "summary": "A library for generating stubs of .NET libraries",
+        "description": {
+          "raw": "# stubgen\n\nGenerate stubs for .NET libraries\n\nPython.NET Stub Generator\n\n## Usage:\n\n    stubgen make (<assembly-name>|--all|--built_in|--core) [options]\n    stubgen group [<assembly-names>...] [--all|--built_in|--core] [options]\n    stubgen (-h | --help)\n    stubgen (-V | --version)\n\n## Examples:\n\n    ipy -m stubgen make System.Reflection --overwrite\n\n## Options:\n\n    <assembly-name>         Name of Dll Assembly to Process\n    <assembly-names>...     Names of Dll Assemblies to Process\n    \n    --all                   Process All Assemblies in defaults.py\n    --built_in              Process All Built-In Assemblies in defaults.py\n    --core                  Process All Core Assemblies in defaults.py\n\n    --output=<dir>          Name of Output Directory [default: stubs]\n    --paths=<dir>...        Additional Directory to add to Path [default:]\n    --overwrite             Force Overwrite if stub already exists [default: False].\n    --no-json               Disables Json Log\n\n    -h --help               Show this help\n    -V --version            Show version\n\n\n",
+          "content_type": "text/markdown"
+        },
+        "keywords": "pythonnet,generation",
+        "classifiers": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Natural Language :: English",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3 :: Only",
+          "Topic :: Software Development :: Build Tools",
+          "Topic :: Software Development :: Code Generators",
+          "Topic :: Software Development :: Documentation",
+          "Topic :: Software Development :: Version Control :: Git",
+          "Topic :: Utilities"
+        ],
+        "license": null,
+        "platform": null,
+        "home_page": "https://github.com/Mimer29or40/pythonnet-stubs",
+        "download_url": null,
+        "requires_python": null,
+        "dependencies": {
+          "requires": [],
+          "provides": [],
+          "obsoletes": [],
+          "requires_dist": [
+            "pythonnet (==2.5.2)",
+            "docopt",
+            "setuptools ; extra == 'dev'",
+            "wheel ; extra == 'dev'",
+            "tox ; extra == 'dev'"
+          ],
+          "provides_dist": [],
+          "obsoletes_dist": [],
+          "requires_external": []
+        },
+        "project_urls": [
+          "Source, https://github.aepsc.com/s316353/pyPIAF",
+          "Bug Reports, https://github.aepsc.com/s316353/pyPIAF/issues"
+        ],
+        "uploader": null,
+        "uploaded_via": null,
+        "yanked": false,
+        "yanked_reason": null
+      }
+    },
+    "1": {
+      "__type__": "Release",
+      "value": {
+        "project_id": 0,
+        "version": "1.1.0",
+        "created": {
+          "__type__": "datetime",
+          "value": "2022-01-31T22:03:06.665640"
+        },
+        "author": "Ryan Smith",
+        "author_email": "Ryan.Smith1215@gmail.com",
+        "maintainer": null,
+        "maintainer_email": null,
+        "summary": "A library for getting data from PIServers",
+        "description": {
+          "raw": "# pythonnet-stubs\n\nGenerate stubs for .NET libraries\n\n\n",
+          "content_type": "text/markdown"
+        },
+        "keywords": "pythonnet,generation",
+        "classifiers": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Natural Language :: English",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3 :: Only",
+          "Topic :: Software Development :: Build Tools",
+          "Topic :: Software Development :: Code Generators",
+          "Topic :: Software Development :: Documentation",
+          "Topic :: Software Development :: Version Control :: Git",
+          "Topic :: Utilities"
+        ],
+        "license": null,
+        "platform": null,
+        "home_page": "https://github.com/Mimer29or40/pythonnet-stubs",
+        "download_url": null,
+        "requires_python": null,
+        "dependencies": {
+          "requires": [],
+          "provides": [],
+          "obsoletes": [],
+          "requires_dist": [
+            "pythonnet (==2.5.2)",
+            "docopt",
+            "setuptools ; extra == 'dev'",
+            "wheel ; extra == 'dev'",
+            "tox ; extra == 'dev'"
+          ],
+          "provides_dist": [],
+          "obsoletes_dist": [],
+          "requires_external": []
+        },
+        "project_urls": [
+          "Source, https://github.aepsc.com/s316353/pyPIAF",
+          "Bug Reports, https://github.aepsc.com/s316353/pyPIAF/issues"
+        ],
+        "uploader": null,
+        "uploaded_via": null,
+        "yanked": false,
+        "yanked_reason": null
+      }
+    }
+  },
+  "filename": {
+    "0": {
+      "__type__": "FileName",
+      "value": {
+        "name": "stubgen-1.1.1-py3-none-any.whl"
+      }
+    },
+    "1": {
+      "__type__": "FileName",
+      "value": {
+        "name": "stubgen-1.1.1.tar.gz"
+      }
+    },
+    "2": {
+      "__type__": "FileName",
+      "value": {
+        "name": "stubgen-1.1.0-py3-none-any.whl"
+      }
+    },
+    "3": {
+      "__type__": "FileName",
+      "value": {
+        "name": "stubgen-1.1.0.tar.gz"
+      }
+    }
+  },
+  "file": {
+    "0": {
+      "__type__": "File",
+      "value": {
+        "release_id": 0,
+        "name": "stubgen-1.1.1-py3-none-any.whl",
+        "python_version": "py3",
+        "package_type": "bdist_wheel",
+        "comment_text": null,
+        "size": 16838,
+        "has_signature": false,
+        "md5_digest": "cec7a505346e690e228bbb8e8f9367b1",
+        "sha256_digest": "52790171d32690a17b145f5fbda290f97da56f2587ab9958b03002e880144b86",
+        "blake2_256_digest": "ac3f407995dfa57872ffc5f0c441ac06608a84711d232067ebca4b05af812880",
+        "upload_time": {
+          "__type__": "datetime",
+          "value": "2022-01-31T22:03:06.598749"
+        },
+        "uploaded_via": null
+      }
+    },
+    "1": {
+      "__type__": "File",
+      "value": {
+        "release_id": 0,
+        "name": "stubgen-1.1.1.tar.gz",
+        "python_version": null,
+        "package_type": "sdist",
+        "comment_text": null,
+        "size": 585078,
+        "has_signature": false,
+        "md5_digest": "8b89887555f112fd04f4bff61f975d12",
+        "sha256_digest": "f0c3f9ff5f08ab8f689c2dc4ba0fb12f47531ed127956120fa3e0e34f2ac358e",
+        "blake2_256_digest": "19e281300886f990b50e48b1f0784d90914e36853a325462dce41efc55295d59",
+        "upload_time": {
+          "__type__": "datetime",
+          "value": "2022-01-31T22:03:06.659834"
+        },
+        "uploaded_via": null
+      }
+    },
+    "2": {
+      "__type__": "File",
+      "value": {
+        "release_id": 1,
+        "name": "stubgen-1.1.0-py3-none-any.whl",
+        "python_version": "py3",
+        "package_type": "bdist_wheel",
+        "comment_text": null,
+        "size": 16489,
+        "has_signature": false,
+        "md5_digest": "c817ed7242c6c83b93d6135e56126e7f",
+        "sha256_digest": "7de2e22e44c4bfeeacc160c64b1273ca376f2be9b43f1980121ae74f7ab9d11a",
+        "blake2_256_digest": "ecbb7d191c09b27304e464369fa5f3548e8c045c58b859b01d5f06b9f43a19b2",
+        "upload_time": {
+          "__type__": "datetime",
+          "value": "2022-01-31T22:03:06.665779"
+        },
+        "uploaded_via": null
+      }
+    },
+    "3": {
+      "__type__": "File",
+      "value": {
+        "release_id": 1,
+        "name": "stubgen-1.1.0.tar.gz",
+        "python_version": null,
+        "package_type": "sdist",
+        "comment_text": null,
+        "size": 584533,
+        "has_signature": false,
+        "md5_digest": "b18c483c7c3721a8c17529beba6d83d0",
+        "sha256_digest": "3c4923bafe72922af363c6ce0cf5d53e374221b2cfe00de2c90da7a054e0579c",
+        "blake2_256_digest": "3d0c4da135226879d83955948fca4411dde9b54b53258a033a6559504a94055c",
+        "upload_time": {
+          "__type__": "datetime",
+          "value": "2022-01-31T22:03:06.724873"
+        },
+        "uploaded_via": null
+      }
+    }
+  }
+}
