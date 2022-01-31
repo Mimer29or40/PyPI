@@ -1,0 +1,50 @@
+name: warehub
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on issues that are opened or edited but only for the master branch
+  issues:
+    types: [ opened, edited ]
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [ 3.x ]
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checking out repo
+        uses: actions/checkout@v2
+
+      - name: Configuring git
+        run: |
+          git checkout -B generated
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2.3.1
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Run warehub
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+          WAREHUB_USERNAME: ${{ secrets.WAREHUB_USERNAME }}
+          WAREHUB_PASSWORD: ${{ secrets.WAREHUB_PASSWORD }}
+        run: |
+          pip install warehub
+          python .github/run_warehub.py
+
+      - name: Push to generated branch
+        run: |
+          git add .
+          git commit -m generated
+          git push -u origin generated
